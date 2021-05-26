@@ -1,0 +1,1710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>DailyLog - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="BulletEntry.html">BulletEntry</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="BulletEntry.html#setChildren">setChildren</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="BulletEntry.html#storeToDatabase">storeToDatabase</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="DailyLog.html">DailyLog</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="DailyLog.html#deleteNoteHandler">deleteNoteHandler</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="DailyLog.html#getDateFromID">getDateFromID</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="DailyLog.html#getDayFromDate">getDayFromDate</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="DailyLog.html#getMonthFromDate">getMonthFromDate</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="DailyLog.html#getSuffixOfDate">getSuffixOfDate</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="DailyLog.html#newNoteHandler">newNoteHandler</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="DailyLog.html#setBulletData">setBulletData</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="DailyLog.html#stringifyNum">stringifyNum</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Database.html">Database</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Database.html#.delete">delete</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Database.html#.deleteDatabase">deleteDatabase</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Database.html#.fetch">fetch</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Database.html#.getStoreFromID">getStoreFromID</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Database.html#.openDatabase">openDatabase</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Database.html#.store">store</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#btnZoomOut">btnZoomOut</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#generateID">generateID</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#loadDay">loadDay</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#loadVars">loadVars</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#setupButtons">setupButtons</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#transitionDaily">transitionDaily</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#transitionMonthly">transitionMonthly</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#transitionYearly">transitionYearly</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#zoomOut">zoomOut</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">DailyLog</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        DailyLog
+        </h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="DailyLog"><span class="type-signature"></span>new DailyLog<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Constructs a blank daily log HTML element using the defined HTML template
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="classes_daily-log.js.html">classes/daily-log.js</a>, <a href="classes_daily-log.js.html#line84">line 84</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-examples">
+<h5>Example</h5>
+
+        <p class="code-caption">Daily Log class</p>
+    
+    <pre class="prettyprint"><code>// Example of a daily JSON object used to generate a daily-log element
+const exampleDailyJSON = {
+  widgets: [
+    {
+      id: '00',
+      type: 'reminder',
+      bulletIDs: [
+        'B 210515 00 00',
+        'B 210515 00 01'
+      ]
+    },
+    {
+      id: '01'
+      type: 'weather'
+    }
+  ],
+  trackers: [
+    {
+      type: 'slider',
+      name: mood,
+      value: 3
+    },
+    {
+      type: 'checkbox',
+      name: 'Meditate',
+      value: 0
+    },
+    {
+      type: 'checkbox',
+      name: 'Work out',
+      value: 1
+    }
+  ],
+  sections: [
+    {
+      id: '00',
+      name: 'Daily Notes',
+      type: 'log',
+      bulletIDs: [
+        'B 210515 00 00',
+        'B 210515 00 01'
+      ]
+    },
+    {
+      id: '03',
+      name: 'Shopping List',
+      type: 'checklist',
+      bulletIDs: [
+        'B 210515 01 00',
+        'B 210515 01 01'
+      ]
+    },
+    {
+      id: '04',
+      name: 'Daily Goals',
+      type: 'checklist',
+      bulletIDs: [
+        'B 210515 02 00',
+        'B 210515 02 01'
+      ]
+    }
+  ]
+}
+// Create a new daily log HTML element using the object
+let daily = document.createElement('daily-log');
+daily.data = exampleDailyJSON;</code></pre>
+
+</div>
+
+</div>
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<div class="section-members">
+<h4 class="name" id="data"><span class="type-signature"></span>data<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    This function returns the data stored in this daily element as a JSON object.
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="classes_daily-log.js.html">classes/daily-log.js</a>, <a href="classes_daily-log.js.html#line117">line 117</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+</div>
+
+        
+            
+<div class="section-members">
+<h4 class="name" id="data"><span class="type-signature"></span>data<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    This function constructs the daily log HTML element using the given ID and daily log
+object data. It starts by constructing and setting the header text for the element, then
+goes through each attribute of the daily log object to construct the widgets, trackers, and
+notes sections of the element. Each notes section is constructed by fetching the data of
+each bullet in the section from the database, and creating a custom bullet-entry HTML
+element that is appended to the section. Finally, the setAttribute function is called
+on this element to set the 'data' attribute of the element to be the given JSON data,
+so that the data can be retrieved from the element later if needed.
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="classes_daily-log.js.html">classes/daily-log.js</a>, <a href="classes_daily-log.js.html#line135">line 135</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+</div>
+
+        
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="deleteNoteHandler"><span class="type-signature"></span>deleteNoteHandler<span class="signature">(event, element)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    This function handles the deletion of a bullet. It first checks if the event that triggered
+the listener is one such that the backspace button was clicked on a bullet with no text,
+because that is how we decided we want the user to be able to delete notes. If the condition
+for deletion is met, the function looks through the daily JSON object to remove the ID of
+the bullet being deleted from the appropriate section, and then stores the updated daily
+JSON object in the database and removes the bullet-entry HTML element from the section.
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="classes_daily-log.js.html">classes/daily-log.js</a>, <a href="classes_daily-log.js.html#line514">line 514</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>event</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>Event</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                the click event that triggered the listener; it contains information
+about the target of the event, which can be used to figure out which section the bullet
+is being deleted from
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>element</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>HTMLElement</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                the bullet-entry element that is being deleted
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="getDateFromID"><span class="type-signature"></span>getDateFromID<span class="signature">(id)</span><span class="type-signature"> &rarr; {Date}</span></h4>
+
+    
+
+
+
+<div class="description">
+    This function is a helper function that is used to determine the date for a given ID. The function
+parses the given ID to determine the year, month, and date, and returns a corresponding Date object.
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="classes_daily-log.js.html">classes/daily-log.js</a>, <a href="classes_daily-log.js.html#line280">line 280</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>string</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                The daily ID (with the format 'D YYMMDD') to parse
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>Date</code></span>
+
+
+    </dd>
+</dl>
+
+
+<div class="param-desc">
+    a Date object representing the date determined by the ID
+</div>
+
+    
+</div>
+
+
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="getDayFromDate"><span class="type-signature"></span>getDayFromDate<span class="signature">(dateObj)</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+<div class="description">
+    This function is a helper function that is used to determine the day of the week for a given date.
+The function takes a Date object, then retrieves and converts the day-of-week integer representation
+into the corresponding string (English) format.
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="classes_daily-log.js.html">classes/daily-log.js</a>, <a href="classes_daily-log.js.html#line297">line 297</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>dateObj</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>Date</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                The Date object from which to retrieve day-of-week
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>string</code></span>
+
+
+    </dd>
+</dl>
+
+
+<div class="param-desc">
+    The day of the week, as a string
+</div>
+
+    
+</div>
+
+
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="getMonthFromDate"><span class="type-signature"></span>getMonthFromDate<span class="signature">(dateObj)</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+<div class="description">
+    This function is a helper function that is used to determine the month for a given date.
+The function takes a Date object, then retrieves and converts the month integer
+representation into the corresponding string (English) format.
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="classes_daily-log.js.html">classes/daily-log.js</a>, <a href="classes_daily-log.js.html#line326">line 326</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>dateObj</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>Date</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                The Date object from which to retrieve month
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>string</code></span>
+
+
+    </dd>
+</dl>
+
+
+<div class="param-desc">
+    The month, as a string
+</div>
+
+    
+</div>
+
+
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="getSuffixOfDate"><span class="type-signature"></span>getSuffixOfDate<span class="signature">(dateObj)</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+<div class="description">
+    This function is a helper function that is used to determine the suffix for a given
+date based on how it would be read. The function takes a Date object, then retrieves
+the date integer and determines the suffix for the date integer that should be
+displayed. <p>
+
+date integer ending in 1 -> suffix 'st' <p>
+date integer ending in 2 -> suffix 'nd' <p>
+date integer ending in 3 -> suffix 'rd' <p>
+date integer ending in 0 or 4-9 -> suffix 'th' <p>
+special cases: date integers 11, 12, and 13 -> suffix 'th'
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="classes_daily-log.js.html">classes/daily-log.js</a>, <a href="classes_daily-log.js.html#line372">line 372</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>dateObj</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>Date</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                The Date object from which to retrieve the date and determine its suffix
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>string</code></span>
+
+
+    </dd>
+</dl>
+
+
+<div class="param-desc">
+    The suffix ('st', 'nd', 'rd', 'th') corresponding to the date integer
+</div>
+
+    
+</div>
+
+
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="newNoteHandler"><span class="type-signature"></span>newNoteHandler<span class="signature">(event)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    This function creates a new bullet. It first generates a bullet ID by combining the date of
+the daily log to which the bullet will belong, the ID of the section to which the bullet
+is being added, and the ID of the new bullet, which is determined based on the number of
+bullets currently in the section. It then adds the bullet ID to the daily JSON object in
+the appropriate section, and stores the updated daily JSON object in the database. Lastly,
+it creates a new bullet-entry HTML element, and adds the appropriate event listener to it
+to allow for future deletion of the bullet element.
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="classes_daily-log.js.html">classes/daily-log.js</a>, <a href="classes_daily-log.js.html#line455">line 455</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>event</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>Event</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                the click event that triggered the listener; it contains information
+about the target of the event, which can be used to figure out which section the bullet
+is being added to
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="setBulletData"><span class="type-signature"></span>setBulletData<span class="signature">(bulletData, bulletID, bulletElement)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    This function is a helper function that is used as the callback for when we fetch bullet
+data from the database. The function checks if the data is not null or undefined. If the
+data isn't null/undefined, the bullet element's data is set to the given data. If the data
+is null/undefined, the bullet element's data is set to an empty JSON object, which creates
+a blank bullet.
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="classes_daily-log.js.html">classes/daily-log.js</a>, <a href="classes_daily-log.js.html#line414">line 414</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>bulletData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>Object</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                the JSON object data that will be stored in the bullet
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>bulletID</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>string</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                the string ID of the bullet object
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>bulletElement</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>HTMLElement</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                the bullet-entry element whose data will be set
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="stringifyNum"><span class="type-signature"></span>stringifyNum<span class="signature">(num)</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+<div class="description">
+    This function is a helper function to convert an ID number into the right string format.
+IDs for our objects are stored as strings, and if the number is less than 10, the string
+representation we use has a 0 in front of the number. For example a section number 1 would
+have an ID of '01'.
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="classes_daily-log.js.html">classes/daily-log.js</a>, <a href="classes_daily-log.js.html#line431">line 431</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>num</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>number</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                the integer that is being stringified
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>string</code></span>
+
+
+    </dd>
+</dl>
+
+
+<div class="param-desc">
+    a string representation of the number that can be used in object IDs
+</div>
+
+    
+</div>
+
+
+
+</div>
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.4</a> on Wed May 26 2021 21:31:27 GMT+0000 (Coordinated Universal Time) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
